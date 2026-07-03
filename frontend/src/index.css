@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  background: #f7f7f9;
+  color: #222;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  background: white;
+}
