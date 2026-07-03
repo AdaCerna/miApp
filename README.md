@@ -1,4 +1,4 @@
-# miApp – EVAL 3 Parte 2 – Desarrollo de Soluciones Cloud
+# miApp
 
 Entorno de desarrollo completo con **Docker Compose**: MariaDB + API REST en PHP
 (Apache) + Frontend en React (Node.js/Vite).

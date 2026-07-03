@@ -16,5 +16,5 @@ CREATE TABLE IF NOT EXISTS usuarios (
 
 -- Datos de ejemplo (opcional, puedes borrarlos)
 INSERT INTO usuarios (nombre, apePaterno, apeMaterno, user, password, estado) VALUES
-('Juan', 'Perez', 'Gomez', 'jperez', SHA2('12345', 256), 1),
-('Maria', 'Lopez', 'Diaz', 'mlopez', SHA2('12345', 256), 1);
+('Alex', 'Perez', 'Gomez', 'Aperez', SHA2('12345', 256), 1),
+('Mia', 'Lopez', 'Diaz', 'mlopez', SHA2('12345', 256), 1);
