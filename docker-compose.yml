@@ -45,8 +45,7 @@ services:
     restart: unless-stopped
     depends_on:
       - backend
-    environment:
-      VITE_API_URL: http://localhost:8080/api/usuarios.php
+    
     volumes:
       - ./frontend:/app
       - /app/node_modules

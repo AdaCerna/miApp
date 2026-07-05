@@ -1,18 +1,119 @@
-body {
-  margin: 0;
-  background: #f7f7f9;
-  color: #222;
+* {
+  box-sizing: border-box;
 }
 
-input, select, button {
-  padding: 0.5rem;
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #222;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.mensaje {
+  background: #e8f5e9;
+  border-left: 4px solid #43a047;
+  color: #2e7d32;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin-bottom: 2rem;
+}
+
+input, select {
+  padding: 0.7rem 0.9rem;
   font-size: 1rem;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+input:focus, select:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.15);
 }
 
 button {
   cursor: pointer;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  transition: transform 0.1s, box-shadow 0.15s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.4);
+}
+
+button[type="button"] {
+  background: #eee;
+  color: #333;
 }
 
 table {
+  width: 100%;
+  border-collapse: collapse;
   background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+thead th {
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+tbody tr:hover {
+  background: #f7f5fb;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  margin-right: 0.4rem;
+}
+
+table button:last-child {
+  background: linear-gradient(135deg, #ef5350, #e53935);
 }

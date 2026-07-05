@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-// URL del backend. Se puede sobreescribir con VITE_API_URL en tiempo de build/run.
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/usuarios.php';
 
+const API_URL = `http://${window.location.hostname}:8080/api/usuarios.php`;
 const vacio = { nombre: '', apePaterno: '', apeMaterno: '', user: '', password: '', estado: 1 };
 
 export default function App() {
@@ -71,8 +70,8 @@ export default function App() {
   };
 
   return (
-    <div style={{ maxWidth: 800, margin: '2rem auto', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Gestión de Usuarios - bd_ventas</h1>
+    <div style={{ maxWidth: 800, margin: '0 auto' }}>
+      <h1>Gestión de Usuarios</h1>
 
       {mensaje && <p style={{ background: '#eef', padding: '0.5rem' }}>{mensaje}</p>}
 
